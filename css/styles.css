@@ -169,12 +169,19 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 700px;
+    width: 100%;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #2683f9;
   padding: 30px 10%;
+  width: 100%;
 }
 @media (max-width: 500px) {
   header {
@@ -228,6 +235,7 @@ footer {
   background: #2683f9;
   padding: 20px 0;
   border: 1px double #e0e0e0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,6 +261,12 @@ footer {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .hero .inner-hero {
+    text-align: center;
+    margin-bottom: ;
+  }
+}
 .hero .inner-hero .hero-btn {
   width: 50%;
   background: #f7990d;
@@ -266,6 +280,11 @@ footer {
   border-radius: 10px;
   margin: 5% 28%;
   transition: 0.2s;
+}
+@media (max-width: 500px) {
+  .hero .inner-hero .hero-btn {
+    margin: 0;
+  }
 }
 .hero .inner-hero .hero-btn:hover {
   background: transparent;
@@ -359,4 +378,96 @@ footer {
 }
 .languages .coming-soon img {
   width: 40%;
+}
+.container1 {
+  max-width: 100%;
+}
+.container1 img {
+  width: 80%;
+  border-radius: 10px;
+}
+.container1 h1 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: red;
+  padding-bottom: 10px;
+}
+.container1 h1:after {
+  content: '';
+  background: #333333;
+  display: block;
+  height: 3px;
+}
+.team {
+  margin: 75px 0;
+}
+.profile {
+  margin-top: 25px;
+}
+.profile .img-box {
+  opacity: 1;
+  display: block;
+  position: relative;
+}
+.profile .img-box::after {
+  content: '';
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.5s ease-in-out;
+}
+.profile .img-box ul {
+  margin: 0;
+  padding: 20px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.profile .img-box ul:hover {
+  opacity: 1;
+}
+.profile .img-box ul::after {
+  transition: all 0.5s ease-in-out;
+}
+.profile .img-box ul li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffff;
+  border-radius: 50%;
+  margin: 3px;
+  padding: 7px;
+  display: inline-block;
+}
+.profile .img-box ul li:hover {
+  color: #2683f9;
+  border: 1px solid #ffcc00;
+}
+.profile .img-box ul li::after {
+  transition: all 0.5s ease-in-out;
+}
+.profile .img-box a {
+  color: #fff;
+}
+.profile .img-box a:hover::after {
+  opacity: 1;
+}
+.profile h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 15px;
+}
+.profile h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #59b5da;
 }

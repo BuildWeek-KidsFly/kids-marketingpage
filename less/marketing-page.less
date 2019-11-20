@@ -12,12 +12,18 @@
         width: 100%;
     }
     .inner-hero{
+        @media @phone{
+            text-align: center;
+            margin-bottom: ;
+        }
         .hero-btn {
             .new-btn(@orange2, 50%, white);
             .warped();
             margin: 5% 28%;
             transition: .2s;
-
+            @media @phone{
+                margin: 0;
+            }
             &:hover{
                 background: transparent;
                 border: .5px solid white;
