@@ -98,12 +98,26 @@
         img{
             width: 30%;
         }
+        @media @phone{
+            flex-direction: column;
+            font-size: 1.8rem;
+        }
     }
     .coming-soon{
         display: flex;
         margin: 2% 0;
         img{
             width: 40%;
+        }
+        @media @phone{
+            flex-direction: row;
+            flex-wrap: wrap;
+            div{
+                margin: 5% 0;
+            }
+            img{
+                width: 30%;
+            }
         }
     }
 }

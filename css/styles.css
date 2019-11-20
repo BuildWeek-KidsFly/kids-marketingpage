@@ -126,6 +126,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/s/bitter/v15/rax8HiqOu8IVPmn7f4xs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Luckiest Guy Regular'), local('LuckiestGuy-Regular'), url(https://fonts.gstatic.com/s/luckiestguy/v10/_gP_1RrxsjcxVyin9l9n_j2hTd5z.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
@@ -135,7 +149,7 @@ html {
 html,
 body,
 header {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Bitter', serif;
   color: #5E6164;
   overflow-x: hidden;
 }
@@ -144,7 +158,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
   color: #ffcc00;
 }
 h1 {
@@ -187,7 +201,7 @@ header {
 @media (max-width: 500px) {
   header {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 header li,
@@ -207,6 +221,11 @@ header .nav-links {
 header .nav-links li {
   display: inline-block;
   padding: 0px 20px;
+}
+@media (max-width: 500px) {
+  header .nav-links li {
+    padding: 0 10px;
+  }
 }
 header .nav-links li a {
   transition: all 0.3s ease 0s;
@@ -376,12 +395,30 @@ footer {
 .languages .offered img {
   width: 30%;
 }
+@media (max-width: 500px) {
+  .languages .offered {
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+}
 .languages .coming-soon {
   display: flex;
   margin: 2% 0;
 }
 .languages .coming-soon img {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .languages .coming-soon {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .languages .coming-soon div {
+    margin: 5% 0;
+  }
+  .languages .coming-soon img {
+    width: 30%;
+  }
 }
 .container1 {
   max-width: 100%;
@@ -418,7 +455,7 @@ footer {
   content: ' ';
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
+  position: relative;
   right: 0;
   left: 0;
   top: 0;
@@ -452,7 +489,7 @@ footer {
   display: inline-block;
 }
 .profile .img-box ul li:hover {
-  color: #2683f9;
+  color: #59b5da;
   border: 1px solid #ffcc00;
 }
 .profile .img-box ul li::after {
@@ -468,10 +505,12 @@ footer {
   font-size: 2.2rem;
   font-weight: bold;
   margin: 15px;
+  letter-spacing: 3px;
 }
 .profile h3 {
   font-size: 1.8rem;
   font-weight: bold;
   margin-top: 15px;
   color: #59b5da;
+  letter-spacing: 1px;
 }
