@@ -137,6 +137,7 @@ body,
 header {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -349,6 +350,9 @@ footer {
     width: 50%;
   }
 }
+.services h3 {
+  color: #59b5da;
+}
 .languages {
   display: flex;
   flex-direction: column;
@@ -403,7 +407,7 @@ footer {
   margin: 75px 0;
 }
 .profile {
-  margin-top: 25px;
+  margin: 50px;
 }
 .profile .img-box {
   opacity: 1;
@@ -411,7 +415,7 @@ footer {
   position: relative;
 }
 .profile .img-box::after {
-  content: '';
+  content: ' ';
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
