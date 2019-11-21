@@ -1,0 +1,123 @@
+.hero {
+    background: url(../img/hanson-lu-qNHbXkO3Xbc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media @phone {
+        width: 100%;
+    }
+    .inner-hero{
+        @media @phone{
+            text-align: center;
+            margin-bottom: ;
+        }
+        .hero-btn {
+            .new-btn(@orange2, 50%, white);
+            .warped();
+            margin: 5% 28%;
+            transition: .2s;
+            @media @phone{
+                margin: 0;
+            }
+            &:hover{
+                background: transparent;
+                border: .5px solid white;
+            }
+        }  
+    } 
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 2% 0;
+    @media @phone {
+        flex-direction: column;
+    }
+    .logistics{
+        width: 30%;
+        @media @phone{
+            width: 100%;
+        }
+     img{
+        width: 100%;
+        @media @phone{
+            width: 50%;
+        }
+    }
+    }
+    .luggage {
+        width: 30%;
+        @media @phone{
+            width: 100%;
+        }
+        img{
+        width: 100%;
+        @media @phone{
+            width: 50%;
+        }
+    }
+    }
+    .child-care {
+        width: 30%;
+        @media @phone{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            @media @phone{
+                width: 50%;
+            }
+        }
+    }
+    h3 {
+        color: @canyon1;
+    }
+}
+.languages{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @media @phone{
+        width: 100%;
+        p{
+            font-size: 1.4rem;
+        }
+        h1 h2 h3 {
+            font-size: 2rem;
+        }
+    }
+    .offered{
+        margin: 2% 0;
+        display: flex;
+        img{
+            width: 30%;
+        }
+        @media @phone{
+            flex-direction: column;
+            font-size: 1.8rem;
+        }
+    }
+    .coming-soon{
+        display: flex;
+        margin: 2% 0;
+        img{
+            width: 40%;
+        }
+        @media @phone{
+            flex-direction: row;
+            flex-wrap: wrap;
+            div{
+                margin: 5% 0;
+            }
+            img{
+                width: 30%;
+            }
+        }
+    }
+}
